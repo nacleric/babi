@@ -1,0 +1,12 @@
+TODO: Render trailing whitesapce on-edit
+self.screen.draw calls
+self.file.draw
+
+put render whitespace into File class
+buffer is handled in the File Class
+
+
+TODO: syntax higlighting for comments
+textmate themes use XML
+https://docs.python.org/3/library/xml.etree.elementtree.html
+Docs for the XML library

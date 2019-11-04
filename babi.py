@@ -591,6 +591,7 @@ EditResult = enum.Enum('EditResult', 'EXIT NEXT PREV')
 
 
 def _edit(screen: Screen) -> EditResult:
+    ''' Main Event Loop '''
     prevkey = Key('', 0, b'')
     screen.file.ensure_loaded(screen.status, screen.margin)
 
@@ -659,6 +660,9 @@ def _edit(screen: Screen) -> EditResult:
             screen.status.update(f'unknown key: {key}', screen.margin)
 
         prevkey = key
+
+
+''' Creates Babi instance '''
 
 
 def c_main(stdscr: 'curses._CursesWindow', args: argparse.Namespace) -> None:
